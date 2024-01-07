@@ -2,7 +2,10 @@
   position: relative;
   background: $backgroundColor;
   display: flex;
+
   width: 100%;
+  max-width: em(1920);
+
   padding: 0 em(20);
   align-items: center;
   justify-content: space-between;
@@ -27,6 +30,7 @@
     cursor: pointer;
     span {
       @include Inter500;
+      white-space: nowrap;
       color: $mainTextColorHalf;
       transition: all 0.23s ease-in-out;
       font-size: em(16);

@@ -8,6 +8,7 @@ html, body {
   @include Inter400;
   position: relative;
   width: 100%;
+  max-width: em(1920);
   padding: 0;
   margin: 0;
   line-height: 1;
