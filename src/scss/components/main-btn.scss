@@ -1,0 +1,19 @@
+.main-btn {
+  display: flex;
+  padding: em(12) em(24);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  gap: em(12);
+  transition: all 0.24s ease-in-out;
+  @include Inter500;
+  img {
+    max-width: em(15);
+  }
+
+  &:hover {
+  border: 1px solid rgba(255, 255, 255, 0.459);
+  background-color: hsla(0, 0%, 100%, 0.1);
+
+  }
+
+}

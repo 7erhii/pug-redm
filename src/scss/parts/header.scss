@@ -1,0 +1,120 @@
+.header {
+  position: relative;
+  background: $backgroundColor;
+  display: flex;
+  width: 100%;
+  padding: 0 em(20);
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    padding: em(20) 0;
+
+    img {
+      width: 100%;
+      max-height: em(64);
+    }
+  }
+  &__menu {
+    display: flex;
+    padding: 0 em(15);
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    padding: em(48) em(28);
+    cursor: pointer;
+    span {
+      @include Inter500;
+      color: $mainTextColorHalf;
+      transition: all 0.23s ease-in-out;
+      font-size: em(16);
+    }
+    transition: all 0.23s ease-in-out;
+
+    &:hover span {
+      color: white;
+    }
+  }
+  &__item--active {
+    span {
+      color: $mainTextColor;
+    }
+  }
+  &__item:hover {
+  }
+  &__dropdown {
+    display: none;
+  }
+
+  &__actions {
+    display: flex;
+    gap: em(24);
+  }
+  &__item:hover .header__dropdown {
+    display: flex;
+  }
+  &__dropdown {
+    position: absolute;
+    display: none;
+
+    justify-content: center;
+    align-items: flex-start;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background-color: $backgroundColor;
+    box-shadow: inset 0px 0px 20px 0px rgba(175, 173, 173, 0.037);
+    padding: em(48);
+    z-index: 1;
+
+    gap: em(180);
+
+    animation-name: fadeIn;
+    animation-duration: 0.24s;
+    animation-fill-mode: forwards;
+  }
+
+  &__dropdown-title {
+    padding: em(4) 0;
+    margin-bottom: em(30);
+    cursor: default;
+    p {
+      @include Inter500;
+      color: $mainTextColorHalf;
+      transition: all 0.23s ease-in-out;
+      font-size: em(24);
+    }
+  }
+  &__dropdown-subtitle {
+    padding: em(4) 0;
+    span {
+      @include Inter400;
+      color: $mainTextColorHalf;
+      transition: all 0.23s ease-in-out;
+      font-size: em(20);
+      transition: 0.24s ease;
+    }
+    span:hover {
+      text-shadow: 0 0 8px rgb(255, 255, 255); /* Creates a white glow */
+    }
+  }
+
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 0%;
+  }
+  60% {
+    opacity: 0.2;
+    top: 90%;
+  }
+  100% {
+    opacity: 1;
+    top: 100%;
+  }
+}

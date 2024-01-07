@@ -1,0 +1,16 @@
+$selectionColor: #23a6d5;
+$backgroundColor: #090909;
+$mainTextColor: #fff;
+$mainTextColorHalf: #ffffff80;
+
+// Core
+@import "core/mixins";
+@import "core/reset";
+@import "core/fonts";
+@import "core/base";
+
+// Parts
+@import "parts/header";
+
+// Components
+@import "components/main-btn";
