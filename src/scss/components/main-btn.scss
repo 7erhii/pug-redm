@@ -1,6 +1,6 @@
 .main-btn {
   display: flex;
-  padding: em(12) em(24);
+  padding: em(20) em(32);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   gap: em(12);
@@ -14,6 +14,10 @@
   border: 1px solid rgba(255, 255, 255, 0.459);
   background-color: hsla(0, 0%, 100%, 0.1);
 
+  }
+
+  &--sm {
+    padding: em(12) em(24);
   }
 
 }

@@ -1,0 +1,38 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: em(912);
+    width: 100%;
+    margin: 0 auto;
+    padding: em(96) em(15);
+    gap: em(64);
+  }
+  &__title {
+    text-align: center;
+    span {
+      // @include Andika400;
+      font-size: em(115);
+      line-height: 130%;
+    }
+  }
+  &__subtitle {
+    text-align: center;
+    text-align: center;
+    span {
+      @include Inter300;
+
+      font-size: em(28);
+      line-height: 170%;
+      color: rgba(255, 255, 255, 0.50);
+    }
+  }
+  &__actions {
+    display: flex;
+    gap: em(20);
+  }
+}

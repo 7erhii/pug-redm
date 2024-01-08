@@ -34,6 +34,10 @@
       color: $mainTextColorHalf;
       transition: all 0.23s ease-in-out;
       font-size: em(16);
+      @include mobile {
+      white-space: nowrap;
+
+      }
     }
     transition: all 0.23s ease-in-out;
 
