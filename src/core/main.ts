@@ -1,25 +1,12 @@
-// console.log(1);
+// В файле main.ts
+import { show } from './home-page';
 
-// document.querySelector('.themetoggle').addEventListener('click', (event) => {
-//    event.preventDefault();
-//    if (localStorage.getItem('theme') === 'dark') {
-//       localStorage.removeItem('theme');
-//    }
-//    else {
-//       localStorage.setItem('theme', 'dark')
-//    }
-//    addDarkClassToHTML()
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    // Вызов функции show
+    show();
 
-// function addDarkClassToHTML() {
-//    try {
-//       if (localStorage.getItem('theme') === 'dark') {
-//          document.querySelector('.page').classList.add('dark');
-//       }
-//       else {
-//          document.querySelector('.page').classList.remove('dark');
-//       }
-//    } catch (err) { }
-// }
-
-// addDarkClassToHTML();
+    // Здесь вы можете добавить другой код или вызовы функций, которые должны быть выполнены после загрузки страницы
+    // Например:
+    // someOtherFunction();
+    // additionalCode();
+});

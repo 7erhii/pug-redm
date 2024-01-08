@@ -16,6 +16,11 @@ html, body {
   min-height: em(600);
   color: $mainTextColor;
   background: $backgroundColor;
+
+  svg {
+    max-width: em(40);
+    max-height: em(40);
+  }
 }
 
 a {

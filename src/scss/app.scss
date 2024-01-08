@@ -2,6 +2,7 @@ $selectionColor: #23a6d5;
 $backgroundColor: #090909;
 $mainTextColor: #fff;
 $mainTextColorHalf: #ffffff80;
+$redActive: #df1f28;
 
 // Core
 @import "core/mixins";
@@ -12,6 +13,9 @@ $mainTextColorHalf: #ffffff80;
 // Parts
 @import "parts/header";
 @import "parts/hero";
+@import "parts/slider";
 
 // Components
+@import "components/options-sm";
 @import "components/main-btn";
+@import "components/custom-input";
