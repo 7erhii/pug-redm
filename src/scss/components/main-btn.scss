@@ -6,6 +6,7 @@
   gap: em(12);
   transition: all 0.24s ease-in-out;
   @include Inter500;
+  cursor: pointer;
   img {
     max-width: em(15);
   }
