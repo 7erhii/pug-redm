@@ -1,0 +1,125 @@
+.spinner {
+  position: absolute;
+  // top: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  max-width: em(1400);
+  width: 100%;
+  background: #00000000;
+  height: em(1400);
+
+  margin: auto;
+  top: calc(100vh / 2);
+  left: -50%;
+  animation: rotateAroundCenter 44s linear infinite;
+  &--right {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    max-width: em(1400);
+    width: 100%;
+    background: #00000000;
+    height: em(1400);
+
+    margin: auto;
+    top: calc(100vh / 2);
+    right: -200%;
+    animation: rotateAroundCenter 44s linear infinite;
+  }
+}
+
+.spiner__image {
+  position: absolute;
+  max-width: em(198);
+  max-height: em(198);
+  img {
+    max-width: em(198);
+    width: 100%;
+  }
+}
+
+#image1 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#image2 {
+  top: 0;
+  right: 0;
+  transform: scale(0.5);
+}
+#image3 {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#image4 {
+  right: 0;
+  bottom: 0;
+  transform: scale(0.5);
+}
+#image5 {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#image6 {
+  bottom: 0;
+  left: 0;
+  transform: scale(0.5);
+}
+#image7 {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#image8 {
+  top: 0;
+  left: 0;
+  transform: scale(0.5);
+}
+
+.spiner__image {
+  position: absolute;
+}
+
+.spiner__image img {
+  animation: spin 32s linear infinite;
+}
+.spiner__image:nth-child(2n) img {
+  animation: spinReverse 28s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes rotateAroundCenter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@keyframes spinReverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-720deg);
+  }
+}
