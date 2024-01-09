@@ -9,8 +9,10 @@ section.hero
         span Оформить подписку
       .main-btn
         span Смотреть тарифы
-  .hero__slider
+  .hero__slider#hero-slider-js
     .slider
+      .slider__starter#slider-hide-js
+        span
       .slider__aside
         .slider__aside-item
           .slider__aside-icon
@@ -24,46 +26,57 @@ section.hero
             include ../../assets/images/Icon-search.svg
           .slider__aside-text
             span Поиск
-        .slider__aside-item
+        .slider__aside-item#slider-home-btn-js
           .slider__aside-icon
             include ../../assets/images/Icon-home.svg
           .slider__aside-text
             span Главная
-        .slider__aside-item
+        .slider__aside-item#slider-tv-btn-js
           .slider__aside-icon
             include ../../assets/images/Icon-tv.svg
           .slider__aside-text
             span Телеканалы
-        .slider__aside-item
+        .slider__aside-item#slider-movie-btn-js
           .slider__aside-icon
             include ../../assets/images/Icon-movie.svg
           .slider__aside-text
             span Кинозал
-        .slider__aside-item
+        .slider__aside-item#slider-arch-btn-js
           .slider__aside-icon
             include ../../assets/images/Icon-folder.svg
           .slider__aside-text
             span Архив
-        .slider__aside-item
+        .slider__aside-item#slider-fav-btn-js
           .slider__aside-icon
             include ../../assets/images/Icon-favorite.svg
           .slider__aside-text
             span Избранное
     .slider__content
-      .slider__search.hidden
-        .custom-input
-          .custom-input__label
-            span Поиск
-          .custom-input__insert.custom-input__insert--active
-            .custom-input__logo
-              include ../../assets/images/Icons-user.svg
-            .custom-input__input
-              input(type="text")
-            .custom-input__add.custom-input__add--forward
-              include ../../assets/images/Icon-go.svg
-          .custom-input__hint
-            span Введите запрос
-      .slider__home
+      .slider__home#slider-home-js
+        +image("slider-home2.png")
+      .slider__tv#slider-tv-js
+        +image("slider-tv2.png")
+      .slider__cinema#slider-cinema-js
+        +image("slider-cinema2.png")
+      .slider__arcive#slider-arcive-js
+        +image("slider-arcive2.png")
+      .slider__fav#slider-fav-js
+        +image("slider-favotite.png")
+    .slider__starter#slider-starter-js
+      span
+
+        //- .custom-input
+        //-   .custom-input__label
+        //-     span Поиск
+        //-   .custom-input__insert.custom-input__insert--active
+        //-     .custom-input__logo
+        //-       include ../../assets/images/Icons-user.svg
+        //-     .custom-input__input
+        //-       input(type="text")
+        //-     .custom-input__add.custom-input__add--forward
+        //-       include ../../assets/images/Icon-go.svg
+        //-   .custom-input__hint
+        //-     span Введите запрос
 
 
       //- +image('poster.png')
