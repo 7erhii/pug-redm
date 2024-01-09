@@ -2,10 +2,8 @@ section.promo
   .promo__wrapper
     .promo__title
       span Акции и предложения
-    //- .promo__line
-    //-   include ../../assets/images/promo-line.svg
     .promo__slider
-      //- .swiper-pagination
+      .swiper-pagination
       .swiper.mySwiper
         .swiper-wrapper
           .swiper-slide
@@ -14,6 +12,8 @@ section.promo
             +image('promo-1.png')
           .swiper-slide
             +image('promo-1.png')
+    .promo__line
+      include ../../assets/images/promo-line.svg
 
 
 
