@@ -20,10 +20,13 @@
   }
   &__menu {
     display: flex;
+    width: 100%;
     padding: 0 em(15);
   }
   &__list {
     display: flex;
+    width: 100%;
+    justify-content: center;
   }
   &__item {
     padding: em(48) em(28);
@@ -33,9 +36,9 @@
       white-space: nowrap;
       color: $mainTextColorHalf;
       transition: all 0.23s ease-in-out;
-      font-size: em(16);
       @include mobile {
       white-space: nowrap;
+      font-size: em(16);
 
       }
     }

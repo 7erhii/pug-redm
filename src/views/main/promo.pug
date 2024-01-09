@@ -2,15 +2,18 @@ section.promo
   .promo__wrapper
     .promo__title
       span Акции и предложения
+    //- .promo__line
+    //-   include ../../assets/images/promo-line.svg
     .promo__slider
-      .swiper
+      //- .swiper-pagination
+      .swiper.mySwiper
         .swiper-wrapper
-          .swiper-slide Slide 1
-          .swiper-slide Slide 2
-          .swiper-slide Slide 3
-        .swiper-pagination
-        .swiper-button-prev
-        .swiper-button-next
-        .swiper-scrollbar
+          .swiper-slide
+            +image('promo-1.png')
+          .swiper-slide
+            +image('promo-1.png')
+          .swiper-slide
+            +image('promo-1.png')
+
 
 

@@ -12,9 +12,29 @@ html(lang="en")
       type="image/png"
     )
     title Empty Project
+
+    // Stylesheet for Swiper
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+
   body
     include parts/header
-    include main/hero
-    include parts/spiner
+    //- include main/hero
+    //- include parts/spiner
     include main/promo
     include parts/footer
+
+    // Script for Swiper
+    script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
+
+    // Initialize Swiper
+    script.
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
