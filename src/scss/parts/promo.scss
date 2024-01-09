@@ -1,0 +1,30 @@
+.promo {
+  // display: flex;
+  flex-direction: column;
+  // max-width: em(1440);
+
+  width: 100%;
+  margin: 0 auto;
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: em(120);
+
+    padding: em(100);
+  }
+  &__title {
+    max-width: 50%;
+    span {
+      @include Andika400;
+      color: #fff;
+      font-size: em(86);
+    }
+  }
+
+  .swiper {
+    width: 600px;
+    height: 300px;
+  }
+}

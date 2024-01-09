@@ -64,7 +64,7 @@ export function firstLoad() {
     const activeIndex = buttons.findIndex(btn => btn.classList.contains("active"));
     const nextIndex = (activeIndex + 1) % buttons.length;
     handleClick(buttons[nextIndex], contents[nextIndex]);
-  }, 1800);
+  }, 2200);
 
   // Clear interval on button click and call handleClick
   buttons.forEach((button, index) => {

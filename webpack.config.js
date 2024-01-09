@@ -47,6 +47,10 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
     ],
   },
   resolve: {
@@ -67,4 +71,5 @@ module.exports = {
     clean: true,
     assetModuleFilename: "assets/[hash][ext][query]",
   },
+
 };
