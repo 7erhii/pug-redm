@@ -1,0 +1,13 @@
+.cards-group {
+  display: flex;
+  flex-direction: column;
+  gap: em(24);
+  &__upper {
+    display: flex;
+    gap: em(24);
+  }
+  &__lower {
+    display: flex;
+    gap: em(24);
+  }
+}

@@ -5,20 +5,52 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   gap: em(12);
   transition: all 0.24s ease-in-out;
+  align-items: center;
   @include Inter500;
+
   cursor: pointer;
   img {
-    max-width: em(15);
+    // width: 100%;
+    max-width: em(18);
+    max-height: em(18);
+
+  }
+  span {
+    @include Inter500;
+    font-size: em(14);
+    line-height: 1.5;
   }
 
   &:hover {
   border: 1px solid rgba(255, 255, 255, 0.459);
-  background-color: hsla(0, 0%, 100%, 0.1);
+  background-color: hsl(0, 0%, 100%);
+  span {
+    color: #000;
+  }
 
   }
 
   &--sm {
     padding: em(12) em(24);
+    img {
+      max-width: em(15);
+      max-height: em(15);
+
+    }
   }
 
+  &--red {
+    background: $redActive;
+    border: none;
+    span {
+      color: #efefef;
+    }
+    &:hover {
+      background: #9F1620;
+      span {
+        color: #ffffff;
+      }
+      border: none;
+    }
+  }
 }

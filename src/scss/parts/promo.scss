@@ -1,12 +1,13 @@
 .promo {
   display: flex;
   flex-direction: column;
-//   // max-width: em(1440);
+  //   // max-width: em(1440);
 
-//   width: 100%;
-//   margin: 0 auto;
-// margin-top: em(200);
-padding: em(100) 0;
+  //   width: 100%;
+  //   margin: 0 auto;
+  // margin-top: em(200);
+  padding: em(100) 0;
+  overflow: hidden;
   &__wrapper {
     position: relative;
     display: flex;
@@ -21,7 +22,7 @@ padding: em(100) 0;
   &__title {
     max-width: 50%;
     span {
-      @include Andika400;
+      @include Inter400;
       color: #fff;
       font-size: em(86);
     }

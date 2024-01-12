@@ -1,0 +1,36 @@
+.get {
+  display: flex;
+  width: 100%;
+  max-width: em(1920);
+  margin: 0 auto;
+  padding: em(80);
+  &__text {
+    // position: absolute;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    // padding: 0 0 0 em(120) ;
+    gap: em(69);
+    padding: em(30) em(50) 0 0 ;
+  }
+  &__title {
+    span {
+      @include Inter400;
+      color: #fff;
+      font-size: em(72);
+    }
+  }
+  &__subtitle {
+    span {
+      @include Inter300;
+      font-size: em(22);
+      line-height: 1.5;
+    }
+  }
+  &__actions {
+    width: 100%;
+    // display: flex;
+    // gap: em(30);
+  }
+}
