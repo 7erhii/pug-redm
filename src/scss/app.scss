@@ -3,6 +3,7 @@ $backgroundColor: #090909;
 $mainTextColor: #fff;
 $mainTextColorHalf: #ffffff80;
 $redActive: #df1f28;
+$redMain: #F30D1E;
 
 // Core
 @import "core/mixins";
@@ -17,6 +18,9 @@ $redActive: #df1f28;
 @import "parts/promo";
 @import "parts/descr-movie";
 @import "parts/get-service";
+@import "parts/choose";
+@import "parts/where";
+@import "parts/tariff";
 @import "parts/footer-store";
 
 // Components
@@ -27,3 +31,4 @@ $redActive: #df1f28;
 @import "components/call-actions";
 @import "components/cards-group";
 @import "components/service-card";
+@import "components/tariff-card";

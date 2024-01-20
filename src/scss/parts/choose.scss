@@ -1,0 +1,166 @@
+.choose {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: em(1920);
+  margin: 0 auto;
+  padding: em(80);
+  align-items: center;
+  &__text {
+    // position: absolute;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    // padding: 0 0 0 em(120) ;
+    gap: em(69);
+    padding: em(30) em(50) 0 0;
+  }
+  &__title {
+    span {
+      @include Inter400;
+      color: #fff;
+      font-size: em(72);
+    }
+  }
+  &__subtitle {
+    span {
+      @include Inter300;
+      font-size: em(22);
+      line-height: 1.5;
+    }
+  }
+  &__actions {
+    width: 100%;
+    // display: flex;
+    // gap: em(30);
+  }
+  &__content {
+    display: flex;
+    width: 50%;
+  }
+  &__content-img {
+    padding: em(120) em(40) em(120) em(300);
+    max-width: 100%;
+    z-index: 10;
+
+    img {
+      max-width: 100%;
+    }
+  }
+  &__content-animation {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+  }
+  &__content-animation-item {
+    position: absolute;
+    z-index: 1;
+    transform: scale(0.8);
+    width: 100%;
+    max-width: em(150);
+    img {
+      max-width: 100%;
+    }
+  }
+  &__content-animation-img1 {
+    top: 10;
+    left: em(550);
+    z-index: 1;
+    animation: moveUpDown1 3s ease-in-out infinite;
+
+  }
+  &__content-animation-img2 {
+    top: em(100);
+    left: em(450);
+    z-index: 1;
+    animation: moveUpDown2 2.5s ease-in-out infinite;
+
+  }
+  &__content-animation-img3 {
+    top: em(40);
+    left: em(250);
+    z-index: 1;
+    animation: moveUpDown3 4s ease-in-out infinite;
+
+  }
+  &__content-animation-img4 {
+    top: em(230);
+    left: em(110);
+    z-index: 1;
+    animation: moveUpDown1 4s ease-in-out infinite;
+
+  }
+  &__content-animation-img5 {
+    top: em(440);
+    left: em(140);
+    z-index: 1;
+    animation: moveUpDown2 3.5s ease-in-out infinite;
+
+
+  }
+  // &__content-animation-img6 {
+  //   top: em(580);
+  //   left: em(40);
+  //   z-index: 1;
+  //   animation: moveUpDown3 5s ease-in-out infinite;
+
+  // }
+  &__content-animation-img6 {
+    top: em(680);
+    left: em(0);
+    z-index: 1;
+    animation: moveUpDown3 5s ease-in-out infinite;
+
+  }
+  &__content-animation-img7 {
+    top: em(680);
+    left: em(190);
+    z-index: 1;
+    animation: moveUpDown1 5s ease-in-out infinite;
+
+  }
+  &__content-animation-img8 {
+    top: em(680);
+    right: em(10);
+    z-index: 1;
+    animation: moveUpDown2 5s ease-in-out infinite;
+
+  }
+  &__content-animation-img9 {
+    top: em(920);
+    right: em(10);
+    z-index: 1;
+    animation: moveUpDown3 6s ease-in-out infinite;
+
+  }
+  &__content-animation-img10 {
+    top: em(420);
+    right: em(10);
+    z-index: 1;
+    animation: moveUpDown3 4.5s ease-in-out infinite;
+
+  }
+  &__content-animation-img11 {
+    top: em(910);
+    left: em(60);
+    z-index: 1;
+    animation: moveUpDown2 4.7s ease-in-out infinite;
+
+  }
+}
+@keyframes moveUpDown1 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
+}
+
+@keyframes moveUpDown2 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes moveUpDown3 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
+}

@@ -6,9 +6,11 @@
   gap: em(12);
   transition: all 0.24s ease-in-out;
   align-items: center;
+  justify-content: center;
   @include Inter500;
 
   cursor: pointer;
+  white-space: nowrap;
   img {
     // width: 100%;
     max-width: em(18);
@@ -21,13 +23,23 @@
     line-height: 1.5;
   }
 
+  svg {
+    max-width: em(22);
+    max-height: em(22);
+    fill: #ffffff;
+  }
+
   &:hover {
   border: 1px solid rgba(255, 255, 255, 0.459);
   background-color: hsl(0, 0%, 100%);
   span {
     color: #000;
   }
-
+  svg {
+    max-width: em(22);
+    max-height: em(22);
+    fill: #1b1b1b!important;
+  }
   }
 
   &--sm {

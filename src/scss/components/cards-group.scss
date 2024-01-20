@@ -10,4 +10,11 @@
     display: flex;
     gap: em(24);
   }
+  &__big {
+    display: flex;
+    flex-direction: column;
+    .service-card  {
+      height: em(470);
+    }
+  }
 }

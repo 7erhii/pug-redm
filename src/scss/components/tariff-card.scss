@@ -1,0 +1,105 @@
+.tariff-card {
+  display: flex;
+  flex-direction: column;
+  padding: em(20);
+  border-radius: 32px;
+  border: 5px solid #2b2b2b;
+  background: var(--Main-Cod-Gray-700, #0e0e0e);
+
+  box-shadow: 0 0px 20px rgba(255, 255, 255, 0.01),
+    0 0px 20px rgba(255, 255, 255, 0.01);
+  gap: em(40);
+  &__grade {
+    display: flex;
+    align-items: center;
+    padding: em(16) em(24);
+    justify-content: space-between;
+    border-radius: 11.2px;
+    background: var(--Main-Cod-Gray-500, #1b1b1b);
+    span {
+      @include Andika400;
+      color: #fff;
+      font-size: em(24);
+    }
+    svg {
+      width: 100%;
+      max-width: em(40);
+      max-height: em(40);
+      fill: #fff;
+    }
+  }
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: em(80) 0;
+    gap: em(10);
+    border-top: 1px solid #1b1b1b;
+    border-bottom: 1px solid #1b1b1b;
+    p {
+      @include Andika700;
+      text-align: center;
+      color: #fff;
+
+      font-size: em(70);
+    }
+    span {
+      @include Andika400;
+      color: var(--TV-COLOR-Dark-Gray-300, #8b919e);
+      text-align: center;
+      font-feature-settings: "clig" off, "liga" off;
+      font-size: em(24);
+    }
+  }
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    padding: em(10) em(20);
+    background: var(--Main-Cod-Gray-500, #1b1b1b);
+    border-radius: 11.2px;
+  }
+  &__descr-item {
+    display: flex;
+    align-items: center;
+    padding: em(20) 0;
+
+    gap: em(10);
+    span {
+      @include Andika400;
+      color: var(--black-white-white, #fff);
+      font-size: em(23);
+      line-height: em(34, 24);
+      letter-spacing: em(0.7, 24);
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(250, 250, 250, 0.04);
+    }
+  }
+  &--white {
+    background: #fff;
+    .tariff-card__grade {
+      background: #f6f6f6;
+      span {
+        color: #090909;
+      }
+      svg {
+        fill: $redMain;
+      }
+    }
+    .tariff-card__price {
+      border-top: 1px solid #1b1b1b3e;
+      border-bottom: 1px solid #1b1b1b3e;
+      p {
+        color: $redMain;
+      }
+    }
+    .tariff-card__descr {
+      background: #f6f6f6;
+      span {
+        color: #090909;
+      }
+    }
+  }
+}

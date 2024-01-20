@@ -1,0 +1,24 @@
+.where {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: em(1920);
+  margin: 0 auto;
+  padding: em(80);
+  align-items: center;
+  gap: em(120);
+  background: rgba(255, 255, 255, 0.06);
+
+  &__title {
+    text-align: center;
+    @include Inter400;
+    color: #fff;
+    font-size: em(72);
+  }
+  &__cards {
+    display: flex;
+    align-items: center;
+    gap: em(20);
+  }
+}
