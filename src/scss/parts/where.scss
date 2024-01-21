@@ -9,16 +9,28 @@
   align-items: center;
   gap: em(120);
   background: rgba(255, 255, 255, 0.06);
-
+  @include mobile {
+    flex-direction: column;
+    padding: em(40) em(15);
+    gap: em(40);
+  }
   &__title {
     text-align: center;
-    @include Inter400;
-    color: #fff;
-    font-size: em(72);
+    span {
+      @include Inter400;
+      color: #fff;
+      font-size: em(72);
+      @include mobile {
+        font-size: em(32);
+      }
+    }
   }
   &__cards {
     display: flex;
     align-items: center;
     gap: em(20);
+    @include mobile {
+      flex-direction: column;
+    }
   }
 }

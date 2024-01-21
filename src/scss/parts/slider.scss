@@ -11,10 +11,25 @@
     border-radius: 20px 0 0 20px;
 
     height: 100%;
+    @include mobile {
+      padding: 0;
+      flex-direction: row;
+      height: 30%;
+      bottom: 0;
+      width: 100%;
+      height: em(80);
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 20px 20px;
+      background: #0b0b0bd6;
+    }
   }
   &__aside:hover {
     .slider__aside-text {
       display: flex;
+      @include mobile {
+        display: none;
+      }
     }
   }
   &__aside-item {
@@ -22,6 +37,9 @@
     flex-wrap: nowrap;
     padding: em(20);
     cursor: pointer;
+    @include mobile {
+      padding: em(6) em(15);
+    }
   }
   &__aside-item.active {
     span {
@@ -48,7 +66,10 @@
   &__aside-icon {
     display: flex;
     width: 100%;
-    width: 24px;
+    width: em(24);
+    @include mobile {
+      width: em(14);
+    }
   }
   &__aside-icon svg {
     fill: #fff;
@@ -61,6 +82,18 @@
     span {
       @include Inter600;
       font-size: em(20);
+      @include mobile {
+        font-size: em(14);
+      }
+    }
+    @include mobile {
+      min-width: em(60);
+      padding-left: em(10);
+    }
+    img {
+      @include mobile {
+        max-width: em(60);
+      }
     }
   }
   &__content {
@@ -74,9 +107,10 @@
       max-height: 100%;
       border-radius: 20px 20px 20px 20px;
     }
+    @include mobile {
+      overflow: hidden;
+    }
   }
-
-
 
   &__search {
     position: absolute;
@@ -93,14 +127,17 @@
     z-index: 2;
   }
 
-
-
-
-  &__home, &__tv, &__cinema, &__arcive, &__fav  {
+  &__home,
+  &__tv,
+  &__cinema,
+  &__arcive,
+  &__fav {
     display: none;
     padding-left: em(200);
+    @include mobile {
+      padding-left: 0;
+    }
   }
-
 }
 
 .slider__aside .slider__aside-item:first-child .slider__aside-icon,
@@ -109,6 +146,10 @@
   align-items: center;
   width: em(40);
   height: em(60);
+  @include mobile {
+    width: em(30);
+    height: em(60);
+  }
 }
 .slider__aside .slider__aside-item:first-child {
   padding: em(10);
@@ -120,4 +161,3 @@
   height: em(60);
   cursor: default;
 }
-

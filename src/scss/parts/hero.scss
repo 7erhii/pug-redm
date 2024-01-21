@@ -3,6 +3,13 @@
   display: flex;
   flex-direction: column;
   z-index: 2;
+  width: 100%;
+  max-width: em(1920);
+  margin: 0 auto;
+  padding: 0 em(80);
+  @include mobile {
+    padding: 0 em(15);
+  }
   &__text {
     display: flex;
     flex-direction: column;
@@ -13,12 +20,19 @@
     margin: 0 auto;
     padding: em(96) em(15);
     gap: em(64);
+    @include mobile {
+      padding: em(46) em(15);
+      gap: em(44);
+    }
   }
   &__title {
     text-align: center;
     span {
       font-size: em(115);
       line-height: 130%;
+      @include mobile {
+        font-size: em(40);
+      }
     }
   }
   &__subtitle {
@@ -30,11 +44,20 @@
       font-size: em(28);
       line-height: 170%;
       color: rgba(255, 255, 255, 0.5);
+      @include mobile {
+        font-size: em(16);
+      }
     }
   }
   &__actions {
     display: flex;
     gap: em(20);
+    width: 100%;
+    justify-content: center;
+    @include mobile {
+      width: 100%;
+      justify-content: center;
+    }
   }
 
   &__slider {
@@ -45,7 +68,11 @@
     margin: 0 auto;
     border: 2px solid #3b3b3b;
     border-radius: 24px;
+    @include mobile {
+      display: flex;
+      width: 100%;
+      height: calc(100vw * 0.7);
+      flex-direction: column-reverse;
+    }
   }
-
 }
-

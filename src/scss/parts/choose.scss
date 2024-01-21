@@ -6,6 +6,10 @@
   margin: 0 auto;
   padding: em(80);
   align-items: center;
+  @include mobile {
+    padding: em(40) em(15);
+    flex-direction: column;
+  }
   &__text {
     // position: absolute;
     max-width: 50%;
@@ -15,12 +19,23 @@
     // padding: 0 0 0 em(120) ;
     gap: em(69);
     padding: em(30) em(50) 0 0;
+    @include mobile {
+      max-width: 100%;
+      width: 100%;
+      padding: em(15);
+    }
   }
   &__title {
     span {
       @include Inter400;
       color: #fff;
       font-size: em(72);
+      @include mobile {
+        font-size: em(32);
+      }
+    }
+    @include mobile {
+      text-align: center;
     }
   }
   &__subtitle {
@@ -28,6 +43,12 @@
       @include Inter300;
       font-size: em(22);
       line-height: 1.5;
+      @include mobile {
+        font-size: em(14);
+      }
+    }
+    @include mobile {
+      text-align: center;
     }
   }
   &__actions {
@@ -38,6 +59,16 @@
   &__content {
     display: flex;
     width: 50%;
+    @include mobile {
+      img {
+        max-width: 100%;
+      }
+    }
+    @include mobile {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
   }
   &__content-img {
     padding: em(120) em(40) em(120) em(300);
@@ -46,6 +77,13 @@
 
     img {
       max-width: 100%;
+      @include mobile {
+        max-width: 60%;
+      }
+    }
+    @include mobile {
+      padding: 0;
+      padding-top: em(80);
     }
   }
   &__content-animation {
@@ -53,6 +91,9 @@
     width: 50%;
     right: 0;
     top: 0;
+    @include mobile {
+      width: 60%;
+    }
   }
   &__content-animation-item {
     position: absolute;
@@ -62,43 +103,60 @@
     max-width: em(150);
     img {
       max-width: 100%;
+      @include mobile {
+        max-width: 40%;
+      }
     }
   }
   &__content-animation-img1 {
-    top: 10;
+    top: em(10);
     left: em(550);
     z-index: 1;
     animation: moveUpDown1 3s ease-in-out infinite;
-
+    @include mobile {
+      left: em(-50);
+    }
   }
   &__content-animation-img2 {
     top: em(100);
     left: em(450);
     z-index: 1;
     animation: moveUpDown2 2.5s ease-in-out infinite;
-
+    @include mobile {
+      left: em(30);
+      top: em(120);
+    }
   }
   &__content-animation-img3 {
     top: em(40);
     left: em(250);
     z-index: 1;
     animation: moveUpDown3 4s ease-in-out infinite;
-
+    @include mobile {
+      left: em(140);
+      top: em(60);
+    }
   }
   &__content-animation-img4 {
     top: em(230);
     left: em(110);
     z-index: 1;
     animation: moveUpDown1 4s ease-in-out infinite;
-
+    @include mobile {
+      left: em(160);
+      top: em(280);
+    }
   }
   &__content-animation-img5 {
     top: em(440);
     left: em(140);
     z-index: 1;
     animation: moveUpDown2 3.5s ease-in-out infinite;
+    @include mobile {
+      top: em(320);
 
-
+      left: em(40);
+    }
   }
   // &__content-animation-img6 {
   //   top: em(580);
@@ -112,55 +170,74 @@
     left: em(0);
     z-index: 1;
     animation: moveUpDown3 5s ease-in-out infinite;
+    @include mobile {
+      top: em(520);
 
+      left: em(140);
+    }
   }
   &__content-animation-img7 {
     top: em(680);
     left: em(190);
     z-index: 1;
     animation: moveUpDown1 5s ease-in-out infinite;
+    @include mobile {
+      top: em(170);
 
+      left: em(40);
+    }
   }
   &__content-animation-img8 {
     top: em(680);
     right: em(10);
     z-index: 1;
     animation: moveUpDown2 5s ease-in-out infinite;
-
   }
   &__content-animation-img9 {
     top: em(920);
     right: em(10);
     z-index: 1;
     animation: moveUpDown3 6s ease-in-out infinite;
-
   }
   &__content-animation-img10 {
     top: em(420);
     right: em(10);
     z-index: 1;
     animation: moveUpDown3 4.5s ease-in-out infinite;
-
   }
   &__content-animation-img11 {
     top: em(910);
     left: em(60);
     z-index: 1;
     animation: moveUpDown2 4.7s ease-in-out infinite;
-
   }
 }
 @keyframes moveUpDown1 {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(20px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
 }
 
 @keyframes moveUpDown2 {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 @keyframes moveUpDown3 {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(20px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
 }

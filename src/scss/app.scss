@@ -25,6 +25,8 @@ $redMain: #F30D1E;
 @import "parts/blog";
 @import "parts/footer";
 @import "parts/footer-store";
+@import "parts/chanels-page";
+@import "parts/possib-page";
 
 // Components
 @import "components/options-sm";
@@ -35,4 +37,5 @@ $redMain: #F30D1E;
 @import "components/cards-group";
 @import "components/service-card";
 @import "components/tariff-card";
-// @import "components/custom-input";
+@import "components/burger-menu";
+@import "components/page-descr";

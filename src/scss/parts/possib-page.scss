@@ -1,0 +1,75 @@
+.possib-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: em(1920);
+  margin: 0 auto;
+  padding: em(80);
+  align-items: center;
+  gap: em(20);
+  &__cards {
+    display: flex;
+    gap: em(20);
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    background: #151515;
+    padding: em(32);
+    gap: em(20);
+  }
+  &__card-header {
+    display: flex;
+    gap: em(24);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: em(24);
+    align-items: center;
+    svg {
+      fill: #fff;
+      width: em(96);
+    }
+  }
+  &__card-descr {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: em(24);
+    gap: em(24);
+  }
+  &__card-text {
+    display: flex;
+    flex-direction: column;
+    gap: em(10);
+    p {
+      @include Inter400;
+      color: #fff;
+      font-size: em(24);
+
+    }
+    span {
+      @include Inter400;
+      color: #fff;
+      font-size: em(16);
+
+    }
+  }
+  &__card-line {
+    display: flex;
+    align-items: center;
+    gap: em(10);
+    svg {
+      max-width: em(40);
+      width: 100%
+    }
+    span {
+      @include Inter400;
+      color: #fff;
+      font-size: em(18);
+      white-space: wrap;
+    }
+  }
+}

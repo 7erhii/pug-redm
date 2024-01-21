@@ -4,6 +4,10 @@
   max-width: em(1920);
   margin: 0 auto;
   padding: em(80);
+  @include mobile {
+    flex-direction: column;
+    padding: em(40) em(15);
+  }
   &__text {
     // position: absolute;
     max-width: 50%;
@@ -12,13 +16,26 @@
     width: 50%;
     // padding: 0 0 0 em(120) ;
     gap: em(69);
-    padding: em(30) em(50) 0 0 ;
+    padding: em(30) em(50) 0 0;
+    @include mobile {
+      max-width: 100%;
+
+      width: 100%;
+      padding: em(30) em(15);
+      gap: em(39);
+    }
   }
   &__title {
     span {
       @include Inter400;
       color: #fff;
       font-size: em(72);
+      @include mobile {
+        font-size: em(32);
+      }
+    }
+    @include mobile {
+      text-align: center;
     }
   }
   &__subtitle {
@@ -26,6 +43,12 @@
       @include Inter300;
       font-size: em(22);
       line-height: 1.5;
+      @include mobile {
+        font-size: em(14);
+      }
+    }
+    @include mobile {
+      text-align: center;
     }
   }
   &__actions {

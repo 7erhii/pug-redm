@@ -3,8 +3,9 @@
   background: $backgroundColor;
   display: flex;
 
-  width: 100%;
   max-width: em(1920);
+  width: 100%;
+
   top: 0;
 
   padding: 0 em(20);
@@ -12,17 +13,28 @@
   justify-content: space-between;
   z-index: 10;
 
+  // overflow: hidden;
+
   &__logo {
     padding: em(20) 0;
 
     img {
       max-height: em(64);
     }
+    @include mobile {
+    padding: em(15) 0;
+    img {
+      max-height: em(34);
+    }
+    }
   }
   &__menu {
     display: flex;
     width: 100%;
     padding: 0 em(15);
+    @include mobile {
+      display: none;
+    }
   }
   &__list {
     display: flex;
@@ -63,6 +75,9 @@
   &__actions {
     display: flex;
     gap: em(24);
+    @include mobile {
+      display: none;
+    }
   }
   &__item:hover .header__dropdown {
     display: flex;

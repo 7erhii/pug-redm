@@ -11,16 +11,22 @@
 
   cursor: pointer;
   white-space: nowrap;
+  @include mobile {
+    padding: em(16) em(16);
+    min-width: 50%;
+  }
   img {
     // width: 100%;
     max-width: em(18);
     max-height: em(18);
-
   }
   span {
     @include Inter500;
     font-size: em(14);
     line-height: 1.5;
+    @include mobile {
+      font-size: em(14);
+    }
   }
 
   svg {
@@ -30,16 +36,16 @@
   }
 
   &:hover {
-  border: 1px solid rgba(255, 255, 255, 0.459);
-  background-color: hsl(0, 0%, 100%);
-  span {
-    color: #000;
-  }
-  svg {
-    max-width: em(22);
-    max-height: em(22);
-    fill: #1b1b1b!important;
-  }
+    border: 1px solid rgba(255, 255, 255, 0.459);
+    background-color: hsl(0, 0%, 100%);
+    span {
+      color: #000;
+    }
+    svg {
+      max-width: em(22);
+      max-height: em(22);
+      fill: #1b1b1b !important;
+    }
   }
 
   &--sm {
@@ -47,7 +53,6 @@
     img {
       max-width: em(15);
       max-height: em(15);
-
     }
   }
 
@@ -58,7 +63,7 @@
       color: #efefef;
     }
     &:hover {
-      background: #9F1620;
+      background: #9f1620;
       span {
         color: #ffffff;
       }

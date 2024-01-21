@@ -11,14 +11,29 @@
 
   border-radius: 32px;
   text-align: center;
+  @include mobile {
+    width: 100%;
+    // max-width: em(150);
+    height: em(150);
+    padding: 0 em(20);
+    gap: em(10);
+    border-radius: 16px;
+  }
   span {
     @include Inter400;
     font-size: em(16);
     line-height: 1.2;
+    @include mobile {
+      font-size: em(14);
+    }
   }
   svg {
     width: em(96);
     height: em(96);
+    @include mobile {
+      width: em(66);
+      height: em(66);
+    }
   }
   &--big {
     min-width: em(260);

@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  height: calc(100vh*2);
+  height: calc(100vh * 2);
   overflow: hidden;
 }
 
@@ -26,6 +26,11 @@
   &--right {
     right: -50%;
   }
+  @include mobile {
+    top: 0;
+    animation: rotateAroundCenter 94s linear infinite;
+    height: em(1800);
+  }
 }
 
 .spiner__image {
@@ -36,44 +41,55 @@
     max-width: em(198);
     width: 100%;
   }
+  @include mobile {
+    max-width: em(88);
+  }
 }
 
-#spiner-l-image1, #spiner-r-image1 {
+#spiner-l-image1,
+#spiner-r-image1 {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
-#spiner-l-image2, #spiner-r-image2 {
+#spiner-l-image2,
+#spiner-r-image2 {
   top: 0;
   right: 0;
   transform: scale(0.5);
 }
-#spiner-l-image3, #spiner-r-image3 {
+#spiner-l-image3,
+#spiner-r-image3 {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-#spiner-l-image4, #spiner-r-image4 {
+#spiner-l-image4,
+#spiner-r-image4 {
   right: 0;
   bottom: 0;
   transform: scale(0.5);
 }
-#spiner-l-image5, #spiner-r-image5 {
+#spiner-l-image5,
+#spiner-r-image5 {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
-#spiner-l-image6, #spiner-r-image6 {
+#spiner-l-image6,
+#spiner-r-image6 {
   bottom: 0;
   left: 0;
   transform: scale(0.5);
 }
-#spiner-l-image7, #spiner-r-image7 {
+#spiner-l-image7,
+#spiner-r-image7 {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-#spiner-l-image8, #spiner-r-image8 {
+#spiner-l-image8,
+#spiner-r-image8 {
   top: 0;
   left: 0;
   transform: scale(0.5);
