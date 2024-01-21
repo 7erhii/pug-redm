@@ -2,6 +2,7 @@ $selectionColor: #23a6d5;
 $backgroundColor: #090909;
 $mainTextColor: #fff;
 $mainTextColorHalf: #ffffff80;
+$lightGray: #2C2C2C;
 $redActive: #df1f28;
 $redMain: #F30D1E;
 
@@ -21,6 +22,8 @@ $redMain: #F30D1E;
 @import "parts/choose";
 @import "parts/where";
 @import "parts/tariff";
+@import "parts/blog";
+@import "parts/footer";
 @import "parts/footer-store";
 
 // Components
@@ -32,3 +35,4 @@ $redMain: #F30D1E;
 @import "components/cards-group";
 @import "components/service-card";
 @import "components/tariff-card";
+// @import "components/custom-input";

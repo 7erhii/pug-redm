@@ -1,0 +1,105 @@
+.blog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: em(1920);
+  margin: 0 auto;
+  padding: em(80);
+  align-items: center;
+  gap: em(80);
+  &__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      @include Inter400;
+      color: #fff;
+      font-size: em(60);
+    }
+  }
+  &__content {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: em(40);
+  }
+  &__post {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 12px;
+    background: $lightGray;
+    max-width: 66%;
+  }
+  &__post-image {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  &__post-text {
+    padding: em(20);
+    display: flex;
+    flex-direction: column;
+    gap: em(20);
+    span {
+      @include Inter400;
+
+      color: var(--black-white-white, #ffffffb6);
+      font-feature-settings: "clig" off, "liga" off;
+      font-size: em(24);
+      line-height: em(36, 24); /* 150% */
+      letter-spacing: em(0.72, 24);
+    }
+    a {
+      @include Inter400;
+
+      color: rgba(255, 255, 255, 0.5);
+      font-size: em(18);
+
+      text-decoration: underline;
+      transition: all 0.24s ease-in-out;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.765);
+      }
+    }
+  }
+  &__stories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: em(540);
+    width: 100%;
+    gap: em(40);
+  }
+  &__storie {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+
+    // background: $lightGray;
+  }
+  &__storie-image {
+    width: 100%;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__storie-text {
+    padding: em(40) em(20);
+    background-color: $lightGray;
+    text-align: center;
+    span {
+      @include Inter400;
+      color: var(--black-white-white, #ffffffb6);
+      font-size: em(24);
+      line-height: em(36, 24); /* 150% */
+      letter-spacing: 0.72px;
+    }
+  }
+}

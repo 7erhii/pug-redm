@@ -1,72 +1,86 @@
 .custom-input {
-  display: flex;
-  flex-direction: column;
-
-  &__label {
-    padding: em(8) 0;
-    span {
-      @include Inter400;
-      font-size: em(16);
-      color: #fff;
-    }
-  }
-  &__insert {
-    padding: em(4) 0;
-    display: flex;
-    align-items: center;
-    gap: em(16);
-    border-radius: 8px;
-    padding: em(12) em(16);
-  }
-  &__insert--active {
-    border: 1px solid #fff;
-  }
-  &__logo {
-    display: flex;
-    align-items: center;
-    svg {
-      max-width: em(22);
-      max-height: em(22);
-      fill: #fafafa;
-    }
-  }
-  &__input {
-
-    input {
-      background: inherit;
-      border: none;
-      outline: none;
-      min-width: em(224);
-      @include Inter400;
-      font-size: em(16);
-      color: #fff;
-    }
-
-  }
-  &__add {
-    display: flex;
-    align-items: center;
-    width: em(22);
-    height: em(22);
-    svg {
-      max-width: em(22);
-      max-height: em(22);
-      fill: #fafafa;
-    }
-  }
-  &__add--forward {
-    cursor: pointer;
-  }
-  &__add--forward:hover {
-    transform: scale(1.2);
-    transition: all 0.24s ease-in-out;
-  }
-  &__hint {
-    padding: em(8) 0;
-    span {
-      @include Inter400;
-      font-size: em(16);
-      color: #fff;
-    }
-  }
+  width: 100%;
+ input {
+  width: 100%;
+  background: #0E0E0E;
+  border: none;
+  outline: none;
+  border: 1px solid #1B1B1B;
+  padding: em(16);
+  border-radius: 12px;
+  color: #fff;
+ }
 }
+
+// .custom-input {
+//   display: flex;
+//   flex-direction: column;
+
+//   &__label {
+//     padding: em(8) 0;
+//     span {
+//       @include Inter400;
+//       font-size: em(16);
+//       color: #fff;
+//     }
+//   }
+//   &__insert {
+//     padding: em(4) 0;
+//     display: flex;
+//     align-items: center;
+//     gap: em(16);
+//     border-radius: 8px;
+//     padding: em(12) em(16);
+//   }
+//   &__insert--active {
+//     border: 1px solid #fff;
+//   }
+//   &__logo {
+//     display: flex;
+//     align-items: center;
+//     svg {
+//       max-width: em(22);
+//       max-height: em(22);
+//       fill: #fafafa;
+//     }
+//   }
+//   &__input {
+
+//     input {
+//       background: inherit;
+//       border: none;
+//       outline: none;
+//       min-width: em(224);
+//       @include Inter400;
+//       font-size: em(16);
+//       color: #fff;
+//     }
+
+//   }
+//   &__add {
+//     display: flex;
+//     align-items: center;
+//     width: em(22);
+//     height: em(22);
+//     svg {
+//       max-width: em(22);
+//       max-height: em(22);
+//       fill: #fafafa;
+//     }
+//   }
+//   &__add--forward {
+//     cursor: pointer;
+//   }
+//   &__add--forward:hover {
+//     transform: scale(1.2);
+//     transition: all 0.24s ease-in-out;
+//   }
+//   &__hint {
+//     padding: em(8) 0;
+//     span {
+//       @include Inter400;
+//       font-size: em(16);
+//       color: #fff;
+//     }
+//   }
+// }

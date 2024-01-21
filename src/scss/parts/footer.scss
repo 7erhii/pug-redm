@@ -1,0 +1,120 @@
+.footer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: em(1920);
+  margin: 0 auto;
+  padding: em(80);
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: em(80);
+  background: hsla(0, 0%, 100%, 0.06);
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    max-width: 30%;
+    // gap: em(40);
+  }
+  &__contacts-header {
+    svg {
+      width: 100%;
+      max-width: em(190);
+    }
+  }
+  &__contacts-items {
+    display: flex;
+    flex-direction: column;
+    padding-top: em(40);
+    padding-left: em(20);
+    width: 100%;
+    gap: em(20);
+  }
+  &__contacts-item {
+    display: flex;
+    gap: em(20);
+    align-items: center;
+    svg {
+      fill: #fff;
+      width: em(30);
+    }
+    a {
+      @include Inter400;
+      color: #fff;
+      font-size: em(18);
+      line-height: em(22, 18);
+      letter-spacing: em(0.5, 22);
+      text-wrap: nowrap;
+    }
+  }
+  &__links {
+    width: 100%;
+    display: flex;
+    gap: em(40);
+    padding-top: em(20);
+    justify-content: center;
+  }
+  &__links-column {
+    display: flex;
+    flex-direction: column;
+    gap: em(40);
+  }
+  &__links-title {
+    span {
+      @include Inter400;
+      color: #ffffffc2;
+      font-size: em(20);
+      line-height: em(22, 18);
+      letter-spacing: em(0.5, 22);
+    }
+  }
+  &__links-items {
+    display: flex;
+    flex-direction: column;
+    gap: em(20);
+    a {
+      @include Inter400;
+      color: #ffffffc2;
+
+      font-size: em(16);
+      line-height: em(22, 18);
+      letter-spacing: em(0.5, 22);
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: em(340);
+    width: 100%;
+    gap: em(20);
+  }
+  &__form-title {
+    span {
+      @include Inter400;
+      color: #ffffff;
+      font-size: em(20);
+      line-height: em(22, 18);
+      letter-spacing: em(0.5, 22);
+    }
+  }
+  &__form-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: em(20);
+    border-radius: 14px;
+    background: var(--Main-Cod-Gray-500, #1B1B1B);
+    gap: em(20);
+  }
+  &__form-actions {
+    width: 100%;
+    padding: em(20) 0;
+    padding-top: em(20);
+    border-top: 1px solid #ffffff47;
+  }
+}
