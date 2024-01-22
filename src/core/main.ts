@@ -4,6 +4,6 @@ import { faqToggle } from "./faqToggle";
 
 document.addEventListener("DOMContentLoaded", (event: Event) => {
   faqToggle();
-  burgerToggle()
-  firstLoad();
+  // burgerToggle()
+  // firstLoad();
 });
