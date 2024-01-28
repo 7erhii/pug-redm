@@ -18,35 +18,65 @@ html(lang="en")
 
   body
     .wrapper
-      //- include parts/header
-      //- include main/hero
-      //- include parts/spiner
-      //- include main/promo
-      //- include main/descr-movies
-      //- include main/get
-      //- include main/choose
-      //- include main/where
-      //- include main/tariff
-      //- include main/blog
-      //- include parts/footer
-      //- include parts/footer-store
-      //- include main/chanels-page
-      //- include main/possib-page
+      include parts/header
+      include main/hero
+      include parts/spiner
+      include main/promo
+      include main/descr-movies
+      include main/get
+      include main/choose
+      include main/where
+      include main/tariff
+      include main/blog
+      include parts/footer
+      include parts/footer-store
+      include main/chanels-page
+      include main/possib-page
       include main/faq-page
-
+      include main/movie
+      //- include main/vue
 
     // Script for Swiper
     script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
+    //- script(src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js")
 
     // Initialize Swiper
+    //- script.
+    //-   var swiper = new Swiper(".mySwiper", {
+    //-     direction: "vertical",
+    //-     slidesPerView: 1,
+    //-     spaceBetween: 30,
+    //-     mousewheel: true,
+    //-     pagination: {
+    //-       el: ".swiper-pagination",
+    //-       clickable: true,
+    //-     },
+    //-   });
     script.
       var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
-        slidesPerView: 1,
+        centeredSlides: true,
+        slidesPerView: 4.5,
         spaceBetween: 30,
-        mousewheel: true,
+        loop: true,
+        loopedSlides: 4,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
       });
+      document.querySelectorAll('.swiper-slide').forEach(slide => {
+        slide.addEventListener('click', function () {
+          var index = parseInt(this.getAttribute('data-slide-index'), 10);
+          swiper.slideTo(index + 2, 500);
+        });
+      });
+      //- var swiper = new Swiper(".mySwiper", {
+      //-   direction: "vertical",
+      //-   slidesPerView: 1,
+      //-   spaceBetween: 30,
+      //-   mousewheel: true,
+      //-   pagination: {
+      //-     el: ".swiper-pagination",
+      //-     clickable: true,
+      //-   },
+      //- });

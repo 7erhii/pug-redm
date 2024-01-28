@@ -3,7 +3,7 @@ import { burgerToggle } from "./burger-menu";
 import { faqToggle } from "./faqToggle";
 
 document.addEventListener("DOMContentLoaded", (event: Event) => {
-  faqToggle();
+  // faqToggle();
   // burgerToggle()
   // firstLoad();
 });

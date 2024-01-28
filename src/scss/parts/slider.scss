@@ -74,14 +74,31 @@
   &__aside-icon svg {
     fill: #fff;
   }
+  &__aside-icons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    width: em(24);
+    gap: em(12);
+    border-top: 1px solid #333;
+    @include mobile {
+      width: em(14);
+    }
+    svg {
+    fill: #ffffff85;
+    }
+  }
+  &__aside-icons:first-child {
+    padding-top: em(50);
+  }
   &__aside-text {
     display: none;
     align-items: center;
     min-width: em(100);
     padding-left: em(20);
     span {
-      @include Inter600;
-      font-size: em(20);
+      @include Inter400;
+      font-size: em(16);
       @include mobile {
         font-size: em(14);
       }

@@ -28,6 +28,7 @@ $redMain: #F30D1E;
 @import "parts/chanels-page";
 @import "parts/possib-page";
 @import "parts/faq";
+@import "parts/movie";
 
 // Components
 @import "components/options-sm";
@@ -40,3 +41,10 @@ $redMain: #F30D1E;
 @import "components/tariff-card";
 @import "components/burger-menu";
 @import "components/page-descr";
+
+#app {
+  background: red;
+  width: 100px;
+  height: 100px;
+  color: #fff!important;
+}

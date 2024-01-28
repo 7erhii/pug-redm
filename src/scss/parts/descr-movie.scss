@@ -6,67 +6,103 @@
   padding: em(120) 0;
   width: 100%;
   max-width: em(1920);
-  @include mobile {
-    padding: em(60) em(15);
+  &__swiper {
     width: 100%;
-    flex-direction: column-reverse;
-  }
-
-  &__image {
-    width: 100%;
-    img {
-      width: 100%;
-      @include mobile {
-        position: absolute;
-        bottom: 0;
-        width: em(1000);
-      }
-    }
-    @include mobile {
-      position: relative;
-      overflow: hidden;
-      height: em(180);
-    }
-  }
-  &__text {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding: 0 0 0 em(120);
-    gap: em(69);
-    @include mobile {
-      position: relative;
-      width: 100%;
-      text-align: center;
-      padding: 0;
-    gap: em(29);
-
-    }
-  }
-  &__title {
-    span {
-      @include Inter400;
-      color: #fff;
-      font-size: em(72);
-      @include mobile {
-        font-size: em(32);
-      }
-    }
-  }
-  &__subtitle {
-    span {
-      @include Inter300;
-      font-size: em(22);
-      line-height: 1.5;
-      @include mobile {
-        font-size: em(14);
-      }
-    }
-  }
-  &__actions {
-    width: 100%;
-    // display: flex;
-    // gap: em(30);
+    min-height: em(600);
+    background-color: rgb(134, 133, 133);
   }
 }
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// .descr-movie {
+//   display: flex;
+//   flex-direction: column;
+//   overflow: hidden;
+//   position: relative;
+//   padding: em(120) 0;
+//   width: 100%;
+//   max-width: em(1920);
+//   @include mobile {
+//     padding: em(60) em(15);
+//     width: 100%;
+//     flex-direction: column-reverse;
+//   }
+
+//   &__image {
+//     width: 100%;
+//     img {
+//       width: 100%;
+//       @include mobile {
+//         position: absolute;
+//         bottom: 0;
+//         width: em(1000);
+//       }
+//     }
+//     @include mobile {
+//       position: relative;
+//       overflow: hidden;
+//       height: em(180);
+//     }
+//   }
+//   &__text {
+//     position: absolute;
+//     display: flex;
+//     flex-direction: column;
+//     width: 50%;
+//     padding: 0 0 0 em(120);
+//     gap: em(69);
+//     @include mobile {
+//       position: relative;
+//       width: 100%;
+//       text-align: center;
+//       padding: 0;
+//     gap: em(29);
+
+//     }
+//   }
+//   &__title {
+//     span {
+//       @include Inter400;
+//       color: #fff;
+//       font-size: em(72);
+//       @include mobile {
+//         font-size: em(32);
+//       }
+//     }
+//   }
+//   &__subtitle {
+//     span {
+//       @include Inter300;
+//       font-size: em(22);
+//       line-height: 1.5;
+//       @include mobile {
+//         font-size: em(14);
+//       }
+//     }
+//   }
+//   &__actions {
+//     width: 100%;
+//     // display: flex;
+//     // gap: em(30);
+//   }
+// }
